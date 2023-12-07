@@ -1,0 +1,211 @@
+$red: #28ea8f86;
+// $red: #F04B42;
+// $blue: #418ae0;
+
+$black: #1c1c1c;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    min-height: 100vh;
+    color: rgb(255, 255, 255);
+
+}
+header{ height: 20vh;
+        width:100vw;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding: 1rem;
+        background-image: url(../multimedia/jdi1.jpeg);
+        background-color: black;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+        border-bottom: 2px solid $red;
+
+        #logo{
+        width:6rem;
+            }
+           
+            .nav {
+                #abrir, #cerrar{
+             display: none;
+                   
+                    }
+        
+                .nav-list {
+                    display: flex;
+                    list-style-type: none;
+                    gap: 1rem;
+                    align-items: center;
+                    justify-content: space-between;
+                  
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                    .numeroCarrito{
+                        text-align: center;
+                        background-color: red;
+                        color: white;
+                        border-radius: 50px;
+                        padding: 5px ;
+                        width: 2rem;
+                        font-size: 16px;
+                        transition: all 1s;
+                    }.efectoNumeroCarrito{
+                      transform: scale(1.4,1.4);
+                      font-size: 18px;
+                    
+                    }
+                    
+                }
+            
+              
+            }
+            }    
+            main {
+                height: 100vh;
+                background-color: black;
+                background-image: url(../multimedia/fondo.jpg);
+          
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                display: flex;
+                flex-direction: column;
+                height: 100%;  width: 100vw;
+               
+                .filtros{
+                    margin: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $red;
+                    color: rgba(255, 255, 255, 0.918);
+                    padding: 8px;
+                    width: 20rem;
+                    border-radius: 10px;
+                    align-items: start;
+                    justify-content: space-between;
+                    .div-filtros {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0;
+                        margin-bottom: 10px;
+                    }
+                    h2 {
+                   
+                        display: inline-block;
+                        text-align: start;
+                    }
+               #filtros{
+               position: relative;
+               top: 10px;
+                height: 2rem;
+                width: 2rem;
+                background-color: rgba(245, 222, 179, 0);
+               
+               }
+               .listaFiltros{
+                padding: 5px;
+                h3{
+                    margin: 10px 0;
+                }
+               }
+               .desaparecerFiltros {
+                display: none;
+               }
+            
+                }
+                #productos{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                .producto{
+                    height: 27rem;
+                    width: 20rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 8px;
+                    padding: 35px ;
+                    background-color:  rgba(77, 70, 70, 0.321);
+                    margin: 10px 20px;
+               
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        transition: all 2s;
+                    }
+                    img:hover{
+                        width: 250px;
+                        height: 250px;
+                    }
+                    h2 {
+
+                        font-size: 2em;
+                    }
+                 button:active{
+                        width: 9rem;
+                        padding: 15px;
+                        font-size: 1.2em;
+                        transition: all 0.5s;
+                        background-color: white;
+                        color: #000000e6;
+                      
+                    }
+                    button {
+                        height: 3rem;
+                        width: 8rem;
+                        background-color:$red;
+                        padding: 10px;
+                        color: rgb(255, 255, 255);
+                        border-radius: 8px;
+                        font-weight: 700;
+                        font-size: 1.2em;
+                        transition: all 0.4s;
+                    }} 
+                }
+            }
+           #carrito {
+            width: 3rem;
+            background-color: rgba(0, 0, 255, 0);
+               }   button{    border: none;
+                
+            
+           }
+
+@media screen and (max-width: 550px) {
+     .nav{
+      height: 60%;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    #abrir{
+        display: inline-block;
+    }
+    ul li {
+        display: none;
+    }
+    .visible {
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 20px;
+      background-color:  #ececec;;
+    }
+    
+  }
+  

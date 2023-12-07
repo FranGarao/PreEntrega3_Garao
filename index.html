@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+
+            <button id="abrir">Abrir</button>
+            <ul class="nav-list">
+                <button id="cerrar">Cerrar</button>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quienes Somos</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Soporte</a></li>
+                <div id="div-carrito">
+                    <i id="carrito" class="fa-solid fa-cart-arrow-down fa-2xl"></i>
+                    <audio src=""></audio>
+                    <p class="numeroCarrito">0</p>
+                </div>
+            </ul>
+        </nav>
+        <!-- <button id="init-search">Buscar</button>
+        <input id="search" name="search" type="search"> -->
+
+    </header>
+    <main>
+
+        <div class="filtros">
+            <div class="div-filtros">
+                <h2>Aplicar Filtro</h2><i id="filtros" class="fa-solid fa-arrow-down"></i>
+            </div>
+            <div class="desaparecerFiltros listaFiltros">
+                <h3 id="precioAscendente">Precio Ascendente</h3>
+                <h3 id="precioDescendente">Precio Descendente</h3>
+                <h3 id="precioPersonalizado">Precio Personalizado</h3>
+            </div>
+        </div>
+        <div id="modal">
+            <h2>Tu carrito:</h2>
+            <section id="verCarrito">
+
+
+            </section>
+            <div id="verPrecioFinal"></div>
+            <button id="comprar">Realizar Compra</button><button id="borrar">Borrar Carrito</button>
+        </div>
+        <section id="productos">
+            <div class="producto">
+                <h2>Airmax</h2> <img src="multimedia/airmax.png" alt="">
+                <p>$95.000</p><button id="producto-a">Comprar</button>
+            </div>
+            <div class="producto">
+                <h2>Buzo Nike</h2> <img src="multimedia/buzonike-removebg-preview.png" alt="">
+                <p>$40.000</p><button id="producto-b">Comprar</button>
+            </div>
+            <div class="producto">
+                <h2>Jordan</h2> <img src="multimedia/jordan.png" alt="">
+                <p>$23.000</p><button id="producto-c">Comprar</button>
+            </div>
+            <div class="producto">
+                <h2>Buzo Jordan</h2> <img src="multimedia/jordanhoodie.png" alt="">
+                <p>$38.000</p><button id="producto-d">Comprar</button>
+            </div>
+            <div class="producto">
+                <h2>Short Jordan</h2> <img src="multimedia/shortjordan.png" alt="">
+                <p>$22.000</p><button id="producto-e">Comprar</button>
+            </div>
+            <div class="producto">
+                <h2>Nike-Jordan</h2> <img src="multimedia/jordanshoes-removebg-preview.png" alt="">
+                <p>$110.000</p><button id="producto-f">Comprar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- <div id="productos"></div>
+    <button id="airmax">AIRMAX</button> <button id="gorra">GORRA JORDAN</button> <button id="nikeBuzo">BUZO
+        NIKE</button>
+    <h2>Tu carrito de compras:</h2>
+    <button id="mostrarCarrito">
+        carrito
+    </button> -->
+    <div id="carrito"></div>
+    <script src="https://kit.fontawesome.com/0228401850.js" crossorigin="anonymous"></script>
+    <!-- <script src="./app.js"></script> -->
+    <script src="assets/app-original.js"></script>
+</body>
+
+</html>
